@@ -12,6 +12,7 @@ fetch('https://api.github.com/users/lisaredfox')
 
         let wrapper = document.createElement('p');
         document.body.append(wrapper);
+        
         let userName = document.createElement('a');
         userName.href = json.html_url;
         wrapper.append(userName);
@@ -19,7 +20,7 @@ fetch('https://api.github.com/users/lisaredfox')
             userName.innerHTML = 'Elizaveta Naborschikova'}
             else if (name == undefined){
                 userName.innerHTML = 'Elizaveta Naborschikova'}
-            else {userName.innerHTML = name};            
+                else {userName.innerHTML = name};            
 
             let userDescription = document.createElement('p');
         document.body.append(userDescription);
